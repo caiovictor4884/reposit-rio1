@@ -1,0 +1,76 @@
+@charset "UTF-8" ;
+*{
+padding: 0px;
+margin: 0px;
+}
+
+body{
+background-color: teal;
+
+
+}
+div.plano{
+display: inline-flex;
+width: 30%;
+height: 300px;
+margin: 20px;
+color: teal;
+
+}
+div#div5{
+    text-align: center;
+    background-color: rgb(133, 199, 233);
+}
+img#olhos{
+display: block;
+margin: auto;
+width: 80%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

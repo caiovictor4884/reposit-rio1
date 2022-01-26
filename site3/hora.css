@@ -1,0 +1,46 @@
+@charset  "UTF-8" ;
+
+
+:root{
+
+--bordercolor : rgb(100, 154, 163)
+
+
+}
+
+*{padding: 0px;  margin: 0px;}
+
+
+img#fundo{ 
+display: block; 
+width: 70%; 
+margin: 0px auto; 
+border-radius: 10%;  
+border-style: solid; 
+border-width: 30px;
+border-color: var(--bordercolor);
+}
+
+p{
+font-size: 2em;
+width: 50%;
+text-align: center;
+margin: auto;
+border-style: solid; 
+border-width: 30px; 
+border-radius: 0% 0% 50% 50% ;
+border-color: var(--bordercolor);
+position: relative;
+top: -20px;
+background-color:var(--bordercolor);
+}
+
+
+
+
+
+
+
+
+
+

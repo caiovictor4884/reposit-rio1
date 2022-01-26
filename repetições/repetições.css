@@ -1,0 +1,61 @@
+@charset "UTF-8" ;
+
+*{
+padding: 0px ;
+margin: 0px;
+
+
+}
+
+p.aparecido{
+font-size: 2em;
+background-color: rgb(245, 211, 142);
+padding: 20px;
+width: 30%;
+margin: 30px;
+display: inline-block;
+}
+p#d5{
+
+background-color: rgb(255, 0, 0);
+
+}
+
+
+
+input#b2{
+display: none;
+
+}
+
+.aparecido2{
+
+display: block;
+font-size: 2em;
+background-color: rgb(255, 255, 232);
+padding: 20px;
+width: 90%;
+margin: 30px auto;
+text-align: justify;
+
+
+
+
+
+}
+
+.aparecido2t{
+
+font-size: 3em;
+font-weight: bold;
+
+}
+
+div#res2{
+
+background-color: rgb(255, 254, 195);
+width: 60%;
+text-align: center;
+margin: auto;
+border-radius: 20px;
+}

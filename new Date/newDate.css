@@ -1,0 +1,61 @@
+@charset "UTF-8" ;
+
+*{
+padding : 0px ;
+margin : 0px ;
+}
+img{
+position: absolute;
+    
+}
+
+    img{
+width: 300px;
+
+
+    }
+img#n1{
+right: 0px;
+transform: rotate(180deg);
+}
+img#n2{
+    left: 0px;
+    transform: rotate(90deg);
+    
+
+}
+
+
+img#n3{
+bottom: 0px;
+left: 0px;
+
+
+}
+img#n4{
+    bottom: 0px;
+    right: 0px;
+    transform: rotate( -90deg);
+    
+    }
+
+section#baixo{
+    position: relative;
+    background-color: rgb(132, 236, 122) ;
+    height: 400px;
+    max-height: 400px;
+    width: 90% ;
+    margin: 100px auto ;
+    }
+section#cima{
+        position: relative;
+        background-color: aqua ;
+        height: 400px;
+        max-height: 400px;
+        width: 90% ;
+        margin: auto ;
+        }
+        body{
+
+            background-color: chartreuse;
+        }

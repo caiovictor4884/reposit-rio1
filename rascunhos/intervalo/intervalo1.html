@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+div#res {
+
+background-color: rgb(0, 247, 255);
+width: 300px;
+height: 300px;
+
+}
+
+    </style>
+</head>
+<body>
+  <div id="res" ></div>  
+<input type="button" value=   "ativar" id='inn1'  >
+<input type="button" value="desativar" id='inn2'  >
+ <div id = 'res2'></div>
+    <script>
+
+var obj = document.getElementById('res')
+var botão1  = document.getElementById('inn1')
+var botão2 = document.getElementById('inn2')
+var res2 = document.getElementById('res2')
+botão1.addEventListener('click' , ativar  )
+botão2.addEventListener('click' , desativar   )
+
+
+function mudacor() {
+var obj = document.getElementById('res')
+let r = Math.round(Math.random()*255) 
+let g = Math.round(Math.random()*255) 
+let b = Math.round(Math.random()*255) 
+
+obj.style.backgroundColor = `rgb(${r} ,${g} ,${b} )   `
+
+}
+var c = 0
+var tmp =[]
+
+function ativar() {
+    
+res2.innerHTML += 'ativou ---- <br>'
+botão1.style.display = 'none'
+botão2.style.display = 'inline-block'
+
+obj.innerText = 'ATIVADO'
+tmp = setInterval( mudacor , 1000   )
+
+}
+
+function desativar() {
+res2.innerHTML += 'desativou ---- <br>'
+botão2.style.display = 'none'
+botão1.style.display = 'inline-block'
+obj.innerText = 'DESATIVADO'
+    clearInterval(tmp)
+
+
+    
+
+  
+
+}
+
+
+
+
+    </script>
+</body>
+</html>

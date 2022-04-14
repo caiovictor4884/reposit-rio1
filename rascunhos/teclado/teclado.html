@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+<style>
+
+div#move{
+position : absolute ;
+left: 0px;
+top: 0px;
+background-color: aqua;
+width : 300px ;
+height: 300px ;
+}
+
+
+</style>
+
+</head>
+<body>
+    
+
+
+
+<div id="move"  >ativado</div>
+
+
+
+
+
+    <script>
+var dx = 0
+var dy = 0
+var obj = document.getElementById('move')
+
+document.addEventListener("keydown" , move ) 
+function move(){
+
+var tecla  = event.keyCode
+switch(tecla){
+case 37 :  dx-=  10 
+
+break
+case 38 : dy-=  10
+
+break
+case 39 : dx+=   10
+
+break
+case 40 : dy+=  10 
+
+break
+}
+obj.style.left = dx + "px"
+obj.style.top = dy + "px"
+obj.innerText = 'ativado'
+}
+
+document.addEventListener("keydown" , stopstart )
+function stopstart(){
+    let tecla = event.keyCode
+if(tecla== 13 && obj.innerText == 'ativado'){
+    obj.innerText = 'desativado'
+    document.removeEventListener("keydown", move)
+
+
+}else if(tecla== 13 && obj.innerText == 'desativado')
+    document.addEventListener("keydown" , move  )
+
+}
+    </script>
+</body>
+
+</html>

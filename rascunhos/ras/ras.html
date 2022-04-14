@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<input type="button" value="" id="rar" >
+<input type="number" name="" id="num">
+<div id="res2"  > <img id="res" src="" alt=""> </div>
+
+
+
+
+<script>
+
+ var rar = document.getElementById('rar')
+var num = document.getElementById('num')
+var res = document.getElementById('res')
+rar.addEventListener('click' , clicar )
+var res2 = document.getElementById('res2')
+function clicar() {
+    var show = [
+{número : 0 , txt : 'A'   , scr : 'hira.ba.jpg'  },
+{número : 1 , txt : 'I'   , scr : 'imagens/essa aqui/hira.i.jpg'  },
+{número : 2 , txt : 'U'   , scr : 'imagens/essa aqui/hira.u.jpg'  },
+{número : 3 , txt : 'E'   , scr : 'imagens/essa aqui/hira.e.jpg'  },
+{número : 4 , txt : 'O'   , scr : 'imagens/essa aqui/hira.o.jpg'  },
+{número : 5 , txt : 'KA'  , scr : 'imagens/essa aqui/hira.ka.jpg'  },
+{número : 6 , txt : 'KI'  , scr : 'imagens/essa aqui/hira.ki.jpg'  },
+{número : 7 , txt : 'KU'  , scr : 'imagens/essa aqui/hira.ku.jpg'  },
+{número : 8 , txt : 'KE'  , scr : 'imagens/essa aqui/hira.ke.jpg'  },
+{número : 9 , txt : 'KO'  , scr : 'imagens/essa aqui/hira.ko.jpg'  },
+{número : 10 , txt : 'GA' , scr : 'imagens/essa aqui/hira.ga.jpg'  },
+{número : 11 , txt : 'GI' , scr : 'imagens/essa aqui/hira.gi.jpg'  },
+{número : 12 , txt : 'GU' , scr : 'imagens/essa aqui/hira.gu.jpg'  },
+{número : 13 , txt : 'GE' , scr : 'imagens/essa aqui/hira.ge.jpg'  },
+{número : 14 , txt : 'GO' , scr : 'imagens/essa aqui/hira.go.jpg'  },
+{número : 15 , txt : 'SA' , scr : 'imagens/essa aqui/hira.sa.jpg'  },
+{número : 16 , txt : 'SHI', scr : 'imagens/essa aqui/hira.shi.jpg'  },
+{número : 17 , txt : 'SU' , scr : 'imagens/essa aqui/hira.su.jpg'  },
+{número : 18 , txt : 'SE' , scr : 'imagens/essa aqui/hira.se.jpg'  },
+{número : 19 , txt : 'SO' , scr : 'imagens/essa aqui/hira.so.jpg'  },
+{número : 20 , txt : 'ZA' , scr : 'imagens/essa aqui/hira.za.png'  },
+{número : 21 , txt : 'JI' , scr : 'imagens/essa aqui/hira.ji.jpg'  },
+{número : 22 , txt : 'ZU' , scr : 'imagens/essa aqui/hira.zu.jpg'  },
+{número : 23 , txt : 'ZE' , scr : 'imagens/essa aqui/hira.ze.jpg'  },
+{número : 24 , txt : 'ZO' , scr : 'imagens/essa aqui/hira.zo.jpg'  },
+{número : 25 , txt : 'TA' , scr : 'imagens/essa aqui/hira.ta.jpg'  },
+{número : 26 , txt : 'CHI', scr : 'imagens/essa aqui/hira.chi.jpg'  },
+{número : 27 , txt : 'TSU', scr : 'imagens/essa aqui/hira.tsu.jpg'  },
+{número : 28 , txt : 'TE' , scr : 'imagens/essa aqui/hira.te.jpg'  },
+{número : 29 , txt : 'TO' , scr : 'imagens/essa aqui/hira.to.jpg'  },
+{número : 30 , txt : 'DA' , scr : 'imagens/essa aqui/hira.da.jpg'  },
+{número : 31 , txt : 'JI' , scr : 'imagens/essa aqui/hira.ji2.jpg'  },
+{número : 32 , txt : 'ZU*', scr : 'imagens/essa aqui/hira.zu2.jpg'  },
+{número : 33 , txt : 'DE' , scr : 'imagens/essa aqui/hira.de.jpg'  },
+{número : 34 , txt : 'DO' , scr : 'imagens/essa aqui/hira.do.jpg'  },
+{número : 35 , txt : 'NA' , scr : 'imagens/essa aqui/hira.na.jpg'  },
+{número : 36 , txt : 'NI' , scr : 'imagens/essa aqui/hira.ni.jpg'  },
+{número : 37 , txt : 'NU' , scr : 'imagens/essa aqui/hira.nu.jpg'  },
+{número : 38 , txt : 'NE' , scr : 'imagens/essa aqui/hira.ne.jpg'  },
+{número : 39 , txt : 'NO' , scr : 'imagens/essa aqui/hira.no.jpg'  },
+{número : 40 , txt : 'HA' , scr : 'imagens/essa aqui/hira.ha.jpg'  },
+{número : 41 , txt : 'HI' , scr : 'imagens/essa aqui/hira.hi.jpg'  },
+{número : 42 , txt : 'FU' , scr : 'imagens/essa aqui/hira.fu.jpg'  },
+{número : 43 , txt : 'HE' , scr : 'imagens/essa aqui/hira.he.jpg'  },
+{número : 44 , txt : 'HO' , scr : 'imagens/essa aqui/hira.ho.jpg'  },
+{número : 45 , txt : 'BA' , scr : 'imagens/essa aqui/hira.ba.jpg'  },
+{número : 46 , txt : 'BI' , scr : 'imagens/essa aqui/hira.bi.jpg'  },
+{número : 47 , txt : 'BU' , scr : 'imagens/essa aqui/hira.bu.jpg'  },
+{número : 48 , txt : 'BE' , scr : 'imagens/essa aqui/hira.be.jpg'  },
+{número : 49 , txt : 'BO' , scr : 'imagens/essa aqui/hira.bo.jpg'  },
+{número : 50 , txt : 'PA' , scr : 'imagens/essa aqui/hira.pa.jpg'  },
+{número : 51 , txt : 'PI' , scr : 'imagens/essa aqui/hira.pi.jpg'  },
+{número : 52 , txt : 'PU' , scr : 'imagens/essa aqui/hira.pu.jpg'  },
+{número : 53 , txt : 'PE' , scr : 'imagens/essa aqui/hira.pe.jpg'  },
+{número : 54 , txt : 'PO' , scr : 'imagens/essa aqui/hira.po.jpg'  },
+{número : 55 , txt : 'MA' , scr : 'imagens/essa aqui/hira.ma.jpg'  },
+{número : 56 , txt : 'MI' , scr : 'imagens/essa aqui/hira.mi.jpg'  },
+{número : 57 , txt : 'MU' , scr : 'imagens/essa aqui/hira.mu.jpg'  },
+{número : 58 , txt : 'ME' , scr : 'imagens/essa aqui/hira.me.jpg'  },
+{número : 59 , txt : 'MO' , scr : 'imagens/essa aqui/hira.mo.jpg'  },
+{número : 60 , txt : 'RA' , scr : 'imagens/essa aqui/hira.ra.jpg'  },
+{número : 61 , txt : 'RI' , scr : 'imagens/essa aqui/hira.ri.jpg'  },
+{número : 62 , txt : 'RU' , scr : 'imagens/essa aqui/hira.ru.jpg'  },
+{número : 63 , txt : 'RE' , scr : 'imagens/essa aqui/hira.re.jpg'  },
+{número : 64 , txt : 'RO' , scr : 'imagens/essa aqui/hira.ro.jpg'  },
+{número : 65 , txt : 'YA' , scr : 'imagens/essa aqui/hira.ya.jpg'  },
+{número : 66 , txt : 'YU' , scr : 'imagens/essa aqui/hira.yu.jpg'  },
+{número : 67 , txt : 'YO' , scr : 'imagens/essa aqui/hira.yo.jpg'  },
+{número : 68 , txt : 'WA' , scr : 'imagens/essa aqui/hira.wa.jpg'  },
+{número : 69 , txt : 'N'  , scr : 'imagens/essa aqui/hira.n.jpg'  },
+{número : 70 , txt : 'WO' , scr : 'imagens/essa aqui/hira.wo.jpg'  }
+]
+    if(Number(num.value) == 0 ){
+
+res.src = show[0].scr
+
+
+    }else{
+
+re2.innerHTML = 'outro'
+
+
+    }
+}
+
+
+
+
+
+
+
+
+</script>
+
+</body>
+</html>

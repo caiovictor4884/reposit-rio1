@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+<script>
+
+/*
+function cor() {
+var cor1= 'amarelo'
+document.write(cor1)
+}
+cor()
+document.write(cor1)
+*/
+//cor1 is undefined
+/* é possível acessar de dentro de uma funçaõ uma variável do lado
+ de fora mas não é possível acessar do lado de fora uma var declarada
+  dentro de uma função */
+/*
+var cor1 = 'azul'
+  function cor() {
+var cor1= 'amarelo'
+document.write(cor1  + "<br>" )
+}
+cor()
+document.write(cor1 + "<br>" )
+*/
+/*o document.write acessa a variável do lado de fora*/
+/*
+var cor1 = 'azul'
+  function cor() {
+ cor1= 'amarelo'
+document.write(cor1  + "<br>" )
+}
+cor()
+document.write(cor1 + "<br>" )
+*/
+/* uma declaração de variável dentro de uma função não altera nada
+no lado de fora, mas uma atribuição modifica os valore dessa var 
+declarados antes afetando o lado de fora */
+/*
+var num = 10
+
+document.write(num + '<br>')
+if(num == 10){
+document.write( num + '<br>')
+
+}
+document.write(num + '<br>') 
+*/
+// a var num é global 
+/*
+var num = 10
+
+document.write(num + '<br>')
+if(num == 10){
+    var num = 5
+document.write( num + '<br>')
+
+}
+document.write(num + '<br>')
+*/ 
+/*var num é global e altera todos os valores de num posteriores 
+independente do escopo*/
+/*
+var num = 10
+
+document.write(num + '<br>')
+if(num == 10){
+    let num = 5
+document.write( num + '<br>')
+
+}
+document.write(num + '<br>')
+*/
+/*let é local, sua alteração vale somente dentro do escopo do if*/
+/*
+let num = 10
+
+document.write(num + '<br>')
+if(num == 10){
+     num = 5
+document.write( num + '<br>')
+
+}
+document.write(num + '<br>')
+*/
+/* let também pode ser global desde que seu escopo seja o próprio
+ script , onde ele funciona igual a uma variável e pode ser chamado
+ qualquer lugar pois seu escopo é todo o código */
+/*
+ let num = 10
+
+document.write(num + '<br>')
+if(num == 10){
+    let num = 5
+document.write( num + '<br>')
+
+}
+document.write(num + '<br>')
+*/
+/*mas o código empre prioriza um escopo interno à erança de um escopo 
+mais geral e pode ser declarado um let com o mesmo nome várias vezes
+ desde que em escopos diferentes*/
+
+</script>
+</body>
+</html>
